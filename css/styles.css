@@ -134,6 +134,14 @@ header .logo-studio {
 /* Hero */
 .hero {
 	background-color: var(--title-text-color);
+	max-width: 1440px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
 	padding-top: 188px;
 	padding-bottom: 188px;
@@ -212,6 +220,17 @@ header .logo-studio {
 	display: flex;
 	column-gap: 25px;
 }
+
+.advantages-icon-bg {
+	padding: 24px 100px;
+	background-color: var(--category-button-bg-c);
+	display: block;
+	content: "";
+	height: 112px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .advantages-list .title {
 	color: var(--title-text-color);
 	font-style: normal;
@@ -248,9 +267,56 @@ header .logo-studio {
 	border-radius: 0px 0px 4px 4px;
 	background-color: #fff;
 }
-.cards-team-text {
-	padding: 32px 16px;
+.social-list {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+	margin-bottom: 32px;
 }
+
+.social-list .link {
+	padding: 12px;
+	background-color: var(--button-hover-color);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: var(--category-button-bg-c);
+}
+.social-list .link:hover {
+	background-color: var(--hover-link-color);
+}
+.cards-team-text {
+	padding: 32px 16px 8px 16px;
+}
+
+/* Customers */
+
+.customers-list {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+}
+
+.customers-bg {
+	padding: 16px 32px;
+	width: 168px;
+	height: 88px;
+	border: 1px solid #8e8f99;
+	border-radius: 5px;
+	display: inline-block;
+}
+.customers-icon {
+	fill: #8e8f99;
+}
+
+.customers-icon:hover {
+	fill: #404bbf;
+}
+.customers-bg:hover {
+	border: 1px solid #404bbf;
+}
+
 /* ---------------------------------------------------------- */
 /* Portfolio.html */
 
@@ -305,21 +371,65 @@ header .logo-studio {
 	background: #ffffff;
 	border: 0 1px 1px 1px solid #e7e9fc;
 }
+.portfolio-cards .item:hover {
+	border: 0, 5px solid var(--category-button-bg-c);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 /* ----------------------------------------------------------- */
 /* Footer */
+
+.container.footer {
+	display: flex;
+	gap: 120px;
+}
 footer {
 	background-color: var(--title-text-color);
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-footer .logo-studio {
+
+.logo-footer {
+	display: flex;
+	flex-direction: column;
+}
+.logo-footer .logo-studio {
 	color: var(--category-button-bg-c);
 }
 
-.container.footer > .text {
+.logo-footer .text {
+	display: inline-block;
 	color: var(--category-button-border-c);
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.02em;
 	width: 264px;
+}
+
+.social-footer > h2 {
+	display: inline-block;
+	color: var(--title-hero-color);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.icons-footer {
+	margin-top: 16px;
+	display: flex;
+	gap: 16px;
+}
+
+.icons-footer .link {
+	padding: 8px;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: var(--category-button-bg-c);
+}
+.icons-footer .link:hover {
+	background-color: #31d0aa;
 }
