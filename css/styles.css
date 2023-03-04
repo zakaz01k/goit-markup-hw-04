@@ -313,6 +313,9 @@ header .logo-studio {
 .customers-icon:hover {
 	fill: #404bbf;
 }
+.customers-bg:hover .customers-icon {
+	fill: #404bbf;
+}
 .customers-bg:hover {
 	border: 1px solid #404bbf;
 }
